@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력 결과</title>
+        <body>
+            <script>
+                function solution(s) {
+                    let answer;
+                    let mid = Math.floor(s.length / 2);
+                    if (s.length % 2 === 1) {
+                        answer = s.substring(mid, mid + 1);
+                    }
+                    else {
+                        answer = s.substring(mid - 1, mid + 1);
+                    }
+                    return answer;
+                }
+
+                let s = 'study';
+                console.log(solution(s));
+            </script>
+        </body>
+    </head>
+</html>
